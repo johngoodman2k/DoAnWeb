@@ -10,7 +10,7 @@
 .header {
     height: 70px;
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
     padding: 0 15px;
     color: rgb(60, 59, 55);
@@ -110,6 +110,12 @@ header {
     outline: none;
 }
 
+.header-dropdown-menu-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
 .outline-none {
     outline: none;
     box-shadow: none;
@@ -123,6 +129,35 @@ header {
 .footer {
     margin-top: 1rem;
     padding-top: 1rem;
+}
+
+.header-login-button {
+    color: #0f7c90 !important;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.header-login-button:hover {
+    border: 1px solid #0f7c90;
+    display: block;
+    background-color: #fff7f0;
+}
+
+.header-button {
+    outline: none;
+    width: 100px;
+}
+
+.header-signup-button {
+    color: #0f7c90 !important;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.header-signup-button:hover {
+    border: 1px solid #0f7c90;
+    display: block;
+    background-color: #fff7f0;
 }
 
 a {
@@ -285,7 +320,7 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.02rem;
-    font-size: 1.2rem;
+    font-size: 3.2rem;
 }
 
 h1 {
@@ -358,6 +393,12 @@ body {
 
 @media screen and (max-width:900px) {
     .billboard-contentbox {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1128px) {
+    .header-dropdown-button {
         display: none;
     }
 }
