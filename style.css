@@ -277,16 +277,16 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'SF Pro Text';
-    font-style: italic;
-    font-weight: 500;
-    src: local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_medium-italic.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_medium-italic.ttf") format("truetype");
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
     /* (C) 2015 Apple Inc. All rights reserved.*/
 }
 
 body {
     margin: 0;
-    font-family: sf, pro;
+    font-family: system;
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-size: 1rem;
     font-weight: 400;
@@ -320,6 +320,7 @@ body {
 }
 
 .udlite-heading-md {
+    font-family: system;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.02rem;
@@ -654,4 +655,203 @@ label.star:hover {
 label.star:before {
     content: '\f006';
     font-family: FontAwesome
+}
+
+.active {
+    background-color: white !important;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.top-categories-container {
+    width: 100%;
+    max-width: 134rem;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding-right: 2.4rem;
+    padding-left: 2.4rem; */
+}
+
+.top-categories-card {
+    border: 1px solid #dcdacb;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100%/3 - 1.6rem);
+    position: relative;
+    margin: 0 1.6rem 1.6rem 0;
+}
+
+.top-categories-title {
+    min-height: 7.6rem;
+    padding: 1.6rem;
+}
+
+.top-categories-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.8rem;
+}
+
+.top-categories-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 43.81em) {
+    .top-categories-desktop {
+        margin-right: -1.6rem;
+    }
+}
+
+@media (min-width: 37.56em) {
+    .top-categories-desktop {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -.8rem;
+    }
+}
+
+@media screen and (min-width: 43.81em) {
+    .top-categories-card {
+        max-width: calc(100%/3 - 1.6rem);
+    }
+}
+
+.top-categories-card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: #3c3b37;
+    font-size: 1.6rem !important;
+    font-weight: 700!important;
+}
+
+@media (min-width: 61.31em) {
+    .top-categories-title {
+        font-size: 1.9rem;
+    }
 }
