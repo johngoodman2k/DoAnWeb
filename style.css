@@ -317,7 +317,8 @@ body {
     padding: 1.2rem 1.2rem 2.4rem 1.2rem;
     position: absolute;
     top: 10rem;
-    left: 8rem;
+    left: 14rem;
+    width: 30rem;
 }
 
 .udlite-heading-md {
@@ -325,7 +326,7 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.02rem;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
 }
 
 h1 {
@@ -398,6 +399,24 @@ body {
 
 @media screen and (max-width:900px) {
     .billboard-contentbox {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header-login-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header-dropdown-cart {
+        display: inline;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header-signup-button {
         display: none;
     }
 }
@@ -663,7 +682,7 @@ label.star:before {
 }
 
 .active {
-    background-color: white !important;
+    background-color: #F0FFFF !important;
 }
 
 
@@ -734,6 +753,10 @@ label.star:before {
     top: 0;
 }
 
+li {
+    margin-bottom: 1rem;
+}
+
 
 /* The dots/bullets/indicators */
 
@@ -799,6 +822,10 @@ label.star:before {
     margin-left: auto;
     /* padding-right: 2.4rem;
     padding-left: 2.4rem; */
+}
+
+.top-categories-card:hover {
+    transform: translateY(-5px);
 }
 
 .top-categories-card {

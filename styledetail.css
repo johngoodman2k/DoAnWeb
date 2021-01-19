@@ -1,0 +1,251 @@
+    .top-container {
+        background-color: black;
+    }
+    
+    .top-container-content {
+        color: white;
+    }
+    
+    .udlite-heading-xl {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -.02rem;
+        font-size: 2rem;
+    }
+    
+    .udlite-text-md {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+    
+    .top-container-content-heading {}
+    
+    .topic-menu-link {
+        color: aquamarine;
+    }
+    
+    .topic-menu-link:hover {
+        text-decoration: underline;
+    }
+    
+    @media (min-width: 67.5em) {
+        .paid-course-landing-page__container .course-landing-page__topic-menu .topic-menu {
+            position: relative;
+            top: -.8rem;
+        }
+    }
+    
+    .topic-menu.udlite-breadcrumb {
+        scroll-padding: 2.4rem;
+    }
+    
+    .topic-menu {
+        scroll-padding: 2.4rem;
+    }
+    
+    .topic-menu-link {
+        color: #8ed1dc;
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+        margin-right: 1rem;
+    }
+    
+    .topic-menu-icon {
+        color: #8ed1dc;
+        width: 0.2rem;
+        height: 0.2rem;
+        margin-bottom: 2rem;
+        padding-right: 1.5rem;
+    }
+    
+    .udlite-breadcrumb {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: .4rem;
+        margin: 0 -.4rem;
+        overflow: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .card-main-content-price-text-1 {
+        color: whitesmoke;
+    }
+    
+    .top-menu-lastupdate-desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media (min-width: 73.75em) {
+        .course-landing-page__topic-menu {
+            max-width: 70rem;
+        }
+    }
+    
+    @media (min-width: 67.5em) {
+        .course-landing-page__topic-menu {
+            max-width: 60rem;
+            margin-left: 4.8rem;
+            margin-right: 14.8rem;
+        }
+    }
+    
+    .component-margin {
+        margin-bottom: 3.2rem;
+    }
+    
+    .course-landing-content {
+        background-color: #fbfbf8;
+        border: 1px solid #dcdacb;
+        border-radius: 4px;
+        padding: 2.4rem 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    @media (min-width: 37.56em) {
+        .course-landing-content {
+            padding-bottom: 1.6rem;
+        }
+    }
+    
+    .course-landing-content-heading {
+        margin: 0 2.4rem 1.6rem;
+    }
+    
+    .course-landing-content-wrapper {
+        margin: 0 2.4rem;
+        width: 100%;
+    }
+    
+    .course-landing-content-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .unstyled-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+    
+    .udlite-block-list .udlite-block-list-item-neutral {
+        color: #3c3b37;
+    }
+    
+    .udlite-block-list .udlite-block-list-item-tight {
+        padding: .4rem 0;
+    }
+    
+    .udlite-block-list .udlite-block-list-item {
+        padding: .8rem 0;
+    }
+    
+    .udlite-block-list .udlite-block-list-item {
+        border-radius: 0;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        letter-spacing: normal;
+        white-space: normal;
+    }
+    
+    .udlite-block-list-content {
+        flex: 1;
+        min-width: 1px;
+    }
+    
+    .udlite-block-list-content-text {
+        display: block!important;
+        display: -webkit-box!important;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        color: #3c3b37;
+    }
+    
+    .udlite-text-sm {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        line-height: 1.4;
+        font-size: 1rem;
+    }
+    
+    .udlite-block-list-icon {
+        color: #73726c;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-right: 1rem;
+    }
+    
+    .curriculum-sub-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .curriculum-sub-header-content {
+        margin: .8rem 0;
+        display: block;
+    }
+    
+    .udlite-btn {
+        position: relative;
+        align-items: center;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        min-width: 10rem;
+        padding: 0 1.2rem;
+        justify-content: center;
+        user-select: none;
+        vertical-align: bottom;
+        white-space: nowrap;
+    }
+    
+    .udlite-btn-ghost {
+        color: #0f7c90;
+        background-color: transparent;
+        min-width: auto;
+        padding: 0;
+    }
+    
+    .udlite-btn-medium {
+        height: 4rem;
+    }
+    
+    .list-group-item.active {
+        color: black
+    }
+    
+    @media (min-width: 37.56em) {
+        .tab-panel-content {
+            padding: 1.6rem 2.4rem
+        }
+    }
+    
+    .tab-panel-content {
+        border-top: 1px solid #dcdacb;
+        padding: 1.2rem 1.6rem;
+    }
+    
+    .courses-time {
+        margin-left: 230px;
+    }
