@@ -20,9 +20,6 @@ public class HomeServlet extends HttpServlet {
             case "/Index":
                 ServletUtils.forward("/views/vwHome/Index.jsp",request,response);
                 break;
-            case "/About":
-                ServletUtils.forward("/views/vwHome/About.jsp",request,response);
-                break;
             default:
                 ServletUtils.redirect("/NotFound",request,response);
                 break;
