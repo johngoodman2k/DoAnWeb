@@ -6,10 +6,10 @@
 <t:main>
     <jsp:body>
         <div>
-            <jsp:include page="../../views/partials/nen.jsp"/>
+            <jsp:include page="../partials/nen.jsp"/>
         </div>
         <div>
-            <jsp:include page="../../views/partials/khoahocmoinhat.jsp"/>
+            <jsp:include page="../partials/khoahocmoinhat.jsp"/>
         </div>
     </jsp:body>
 </t:main>

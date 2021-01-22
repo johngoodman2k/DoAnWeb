@@ -10,8 +10,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/b325eaacc3.js" crossorigin="anonymous"></script>
-    <%--    <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">--%>
-    <%--    <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">--%>
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/public/owlCarouse/owl.carousel.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/public/owlCarouse/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/styleindex.css">
     <%--    <link rel="stylesheet" href="${pageContext.request.contextPath}/public/javascript/myscript.js">--%>
@@ -29,9 +29,7 @@
 <%--    <jsp:include page="../../views/partials/khoahocmoinhat.jsp"/>--%>
 <%--</div>--%>
 <div>
-    <jsp:doBody>
-    </jsp:doBody>
-
+    <jsp:doBody />
 </div>
 
 <div>
@@ -44,8 +42,13 @@
     <jsp:include page="../../views/partials/below.jsp"/>
 </div>
 
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "></script>
+<script src="${pageContext.request.contextPath}/public/owlCarouse/owl.carousel.min.js "></script>
+<script>
+    $('.owl-carousel').owlCarousel();
+</script>
 
 </body>
 

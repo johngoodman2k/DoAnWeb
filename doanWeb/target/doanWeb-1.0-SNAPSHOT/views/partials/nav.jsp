@@ -2,7 +2,7 @@
 
 <header class="header-position">
     <div class="header ">
-        <a >
+        <a href="${pageContext.request.contextPath}/Home">
             <h1>KJdemy</h1>
         </a>
 

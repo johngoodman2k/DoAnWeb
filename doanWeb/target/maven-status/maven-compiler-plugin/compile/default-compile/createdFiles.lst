@@ -1,0 +1,7 @@
+beans\Category.class
+controllers\DefaultServlet.class
+utils\ServletUtils.class
+controllers\AdminCategoryServlet.class
+models\CategoryModel.class
+models\DbUtils.class
+controllers\HomeServlet.class
