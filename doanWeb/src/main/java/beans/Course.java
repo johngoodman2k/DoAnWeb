@@ -1,27 +1,27 @@
 package beans;
 
 public class Course {
-    int CouID;
-    String CouName;
-    String Field;
-    String Instructor;
-    String Rating;
-    String Img;
-    int Price;
-    String SalePrice;
 
-    public Course(int couID, String couName, String field, String instructor, String rating, String img, int price, String salePrice) {
-        CouID = couID;
-        CouName = couName;
-        Field = field;
-        Instructor = instructor;
-        Rating = rating;
-        Img = img;
-        Price = price;
-        SalePrice = salePrice;
-    }
+    int CouID;
+    String CouName, TinyDes, FullDes;
+    float Rating;
+    int Price;
+    String SalePrice,Preview;
+    int CatID;
 
     public Course() {
+    }
+
+    public Course(int couID, String couName, String tinyDes, String fullDes, float rating, int price, String salePrice, String preview, int catID) {
+        CouID = couID;
+        CouName = couName;
+        TinyDes = tinyDes;
+        FullDes = fullDes;
+        Rating = rating;
+        Price = price;
+        SalePrice = salePrice;
+        Preview = preview;
+        CatID = catID;
     }
 
     public int getCouID() {
@@ -40,36 +40,28 @@ public class Course {
         CouName = couName;
     }
 
-    public String getField() {
-        return Field;
+    public String getTinyDes() {
+        return TinyDes;
     }
 
-    public void setField(String field) {
-        Field = field;
+    public void setTinyDes(String tinyDes) {
+        TinyDes = tinyDes;
     }
 
-    public String getInstructor() {
-        return Instructor;
+    public String getFullDes() {
+        return FullDes;
     }
 
-    public void setInstructor(String instructor) {
-        Instructor = instructor;
+    public void setFullDes(String fullDes) {
+        FullDes = fullDes;
     }
 
-    public String getRating() {
+    public float getRating() {
         return Rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(float rating) {
         Rating = rating;
-    }
-
-    public String getImg() {
-        return Img;
-    }
-
-    public void setImg(String img) {
-        Img = img;
     }
 
     public int getPrice() {
@@ -86,5 +78,21 @@ public class Course {
 
     public void setSalePrice(String salePrice) {
         SalePrice = salePrice;
+    }
+
+    public String getPreview() {
+        return Preview;
+    }
+
+    public void setPreview(String preview) {
+        Preview = preview;
+    }
+
+    public int getCatID() {
+        return CatID;
+    }
+
+    public void setCatID(int catID) {
+        CatID = catID;
     }
 }

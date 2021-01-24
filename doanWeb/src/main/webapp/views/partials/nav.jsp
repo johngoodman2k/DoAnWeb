@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <button class="header-button btn header-login-button ">Log in</button>
-        <button class="header-button btn header-signup-button ">Sign up</button>
+        <a href="${pageContext.request.contextPath}/Account/Login" class="header-button btn header-login-button "  role="button">Log in</a>
+        <a href="${pageContext.request.contextPath}/Account/Register" class="header-button btn header-signup-button "  role="button">Sign up</a>
     </div>
 </header>

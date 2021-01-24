@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/b325eaacc3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/public/owlCarouse/owl.carousel.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/public/owlCarouse/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/categories.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/styleindex.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/styledetail.css">
 
@@ -28,11 +28,11 @@
     <jsp:include page="../../views/partials/left.jsp"/>
         </div>
         <div class="col-sm-9">
-            <div class="card">
+<%--            <div class="card">--%>
                 <div class="card-body">
                     <jsp:doBody />
                 </div>
-            </div>
+<%--            </div>--%>
         </div>
     </div>
 

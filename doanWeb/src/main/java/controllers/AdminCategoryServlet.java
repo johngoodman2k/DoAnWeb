@@ -27,13 +27,9 @@ public class AdminCategoryServlet extends HttpServlet {
                 ServletUtils.forward("/views/vwCategory/Index.jsp",request,response);
                 break;
             case "/Add":
-                List<Category> list1 = CategoryModel.getAll();
-                request.setAttribute("categories",list1);
                 ServletUtils.forward("/views/vwCategory/Add.jsp", request, response);
                 break;
             case "/Edit":
-                List<Category> list2 = CategoryModel.getAll();
-                request.setAttribute("categories",list2);
                 int id = Integer.parseInt(request.getParameter("id"));
                 Optional<Category> c = CategoryModel.findById(id);
                 if (c.isPresent()) {

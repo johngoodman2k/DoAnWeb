@@ -1,6 +1,5 @@
 package models;
 
-import beans.Category;
 import beans.Course;
 import org.sql2o.Connection;
 
@@ -25,4 +24,18 @@ public class CourseModel {
                         .executeAndFetch(Course.class);
             }
         }
+        public static Optional<Course> findByID(int id) {
+        String sql = "select * from courses where CouID = :CouID";
+        try (Connection con = DbUtils.getConnection()) {
+            List<Course> list = con.createQuery(sql)
+                    .addParameter("CouID", id)
+                    .executeAndFetch(Course.class);
+
+            if (list.size() == 0) {
+                return Optional.empty();
+            }
+
+            return Optional.ofNullable(list.get(0));
+        }
+    }
 }
