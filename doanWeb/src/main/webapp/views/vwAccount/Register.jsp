@@ -9,9 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
 </head>
 <body>
-<form method="post">
+<form method="post" id="frmRegister">
     <div class="login-wrap">
         <div class="login-html">
             <div class="login-form">
@@ -22,7 +23,7 @@
 
                     <div class="group">
                         <label for="user" class="label" >Username</label>
-                        <input id="user" type="text" class="input" name="username" autofocus>
+                        <input id="user" type="text" class="input" name="username">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
@@ -39,7 +40,7 @@
 
                     <div class="group">
                         <label for="email" class="label">Email Address</label>
-                        <input id="email" type="text" class="input">
+                        <input id="email" type="text" class="input" name="email">
                     </div>
                     <div class="group">
                         <label for="txtDOB" class="label" >Date of Birth</label>
@@ -60,6 +61,40 @@
         </div>
     </div>
 </form>
+<script>
+    $('#frmRegister').on('submit', function (e) {
+        e.preventDefault();
+
+        const username = $('#user').val();
+        if (username.length === 0) {
+            alert('Invalid username.');
+            return;
+        }
+
+        $.getJSON('${pageContext.request.contextPath}/Account/IsAvailable?user=' + username, function (data) {
+            if (data === true) {
+                $('#frmRegister').off('submit').submit();
+            } else {
+                alert('Not available.');
+            }
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+<script>
+
+
+    $('#txtDOB').datetimepicker({
+        format: 'd/m/Y',
+        timepicker: false,
+        mask: true,
+    });
+
+    $('#user').select();
+</script>
 </body>
 
 

@@ -2,6 +2,7 @@ package models;
 
 import beans.Course;
 import org.sql2o.Connection;
+import utils.DbUtils;
 
 import java.util.List;
 import java.util.Optional;

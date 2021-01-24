@@ -1056,76 +1056,119 @@
     </user>
     <table id="335" parent="8" name="categories"/>
     <table id="336" parent="8" name="courses"/>
-    <column id="337" parent="335" name="CatID">
+    <table id="337" parent="8" name="users"/>
+    <column id="338" parent="335" name="CatID">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="338" parent="335" name="CatName">
+    <column id="339" parent="335" name="CatName">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_unicode_ci</Collation>
     </column>
-    <key id="339" parent="335" name="PRIMARY">
+    <key id="340" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CatID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="340" parent="336" name="CouID">
+    <column id="341" parent="336" name="CouID">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="341" parent="336" name="CouName">
+    <column id="342" parent="336" name="CouName">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_unicode_ci</Collation>
     </column>
-    <column id="342" parent="336" name="TinyDes">
+    <column id="343" parent="336" name="TinyDes">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_unicode_ci</Collation>
     </column>
-    <column id="343" parent="336" name="FullDes">
+    <column id="344" parent="336" name="FullDes">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_unicode_ci</Collation>
     </column>
-    <column id="344" parent="336" name="Rating">
+    <column id="345" parent="336" name="Rating">
       <Position>5</Position>
       <DataType>float|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="345" parent="336" name="Price">
+    <column id="346" parent="336" name="Price">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="346" parent="336" name="SalePrice">
+    <column id="347" parent="336" name="SalePrice">
       <Position>7</Position>
       <DataType>text|0s</DataType>
       <Collation>utf8_unicode_ci</Collation>
     </column>
-    <column id="347" parent="336" name="Preview">
+    <column id="348" parent="336" name="Preview">
       <Position>8</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_unicode_ci</Collation>
     </column>
-    <column id="348" parent="336" name="CatID">
+    <column id="349" parent="336" name="CatID">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="349" parent="336" name="PRIMARY">
+    <key id="350" parent="336" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CouID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="351" parent="337" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="352" parent="337" name="username">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Collation>utf8_croatian_ci</Collation>
+    </column>
+    <column id="353" parent="337" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="354" parent="337" name="name">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="355" parent="337" name="email">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="356" parent="337" name="dob">
+      <Position>6</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="357" parent="337" name="permission">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="358" parent="337" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>
