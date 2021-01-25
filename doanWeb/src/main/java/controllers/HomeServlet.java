@@ -1,11 +1,16 @@
 package controllers;
 
+import beans.Category;
+import beans.Course;
+import models.CategoryModel;
+import models.CourseModel;
 import utils.ServletUtils;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet(name = "HomeServlet", urlPatterns = "/Home/*")
 public class HomeServlet extends HttpServlet {

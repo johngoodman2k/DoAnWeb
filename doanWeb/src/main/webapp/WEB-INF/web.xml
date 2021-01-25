@@ -20,4 +20,17 @@
         <filter-name>AuthenticationFilter</filter-name>
         <url-pattern>/Account/Profile</url-pattern>
     </filter-mapping>
+    <filter-mapping>
+        <filter-name>CourseFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AdminFilter</filter-name>
+        <url-pattern>/Admin/Category/*</url-pattern>
+        <url-pattern>/Admin/Course/*</url-pattern>
+    </filter-mapping>
+
+
+
+
 </web-app>

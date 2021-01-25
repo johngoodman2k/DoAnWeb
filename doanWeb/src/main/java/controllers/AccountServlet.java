@@ -85,7 +85,7 @@ public class AccountServlet extends HttpServlet {
         int permission = 0;
         User user = new User(-1, username, bcryptHashString, name, email, dob, permission);
         UserModel.add(user);
-        ServletUtils.redirect("/Home", request, response);
+        ServletUtils.redirect("/Account/Login", request, response);
     }
     private void postLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
@@ -96,8 +96,10 @@ public class AccountServlet extends HttpServlet {
             BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), user.get().getPassword());
             if (result.verified) {
                 HttpSession session = request.getSession();
+
                 session.setAttribute("auth", true);
                 session.setAttribute("authUser", user.get());
+                session.setAttribute("per",user.get().getPermission());
 
                 String url = (String) session.getAttribute("retUrl");
                 if (url == null) url = "/Home";
@@ -118,6 +120,7 @@ public class AccountServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("auth", false);
         session.setAttribute("authUser", new User());
+        session.setAttribute("per", 0);
 
         String url = request.getHeader("referer");
         if (url == null) url = "/Home";

@@ -9,6 +9,9 @@
             <jsp:include page="../partials/nen.jsp"/>
         </div>
         <div>
+            <jsp:include page="../partials/khoahocnoibat.jsp"/>
+        </div>
+        <div>
             <jsp:include page="../partials/khoahocmoinhat.jsp"/>
         </div>
     </jsp:body>

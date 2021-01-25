@@ -8,10 +8,19 @@
     </div>
     <div class="list-group list-group-flush"  >
         <c:forEach var="c" items="${categoriesWithDetails}">
-            <a href="${pageContext.request.contextPath}/Course/ByCat?id=${c.catID}" class="list-group-item list-group-item-action">
+        <c:choose>
+            <c:when test="${per==1}">
+            <a href="${pageContext.request.contextPath}/Admin/Course/ByCat?id=${c.catID}" class="list-group-item list-group-item-action">
                 <i class="fa fa-caret-right" aria-hidden="true"></i>
                     ${c.catName}
-            </a>
+            </c:when>
+                <c:otherwise>
+                <a href="${pageContext.request.contextPath}/Course/ByCat?id=${c.catID}" class="list-group-item list-group-item-action">
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        ${c.catName}
+                </a>
+                </c:otherwise>
+        </c:choose>
         </c:forEach>
     </div>
 </div>

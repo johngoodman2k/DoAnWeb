@@ -1,3 +1,5 @@
+<jsp:useBean id="categoriesWithDetails" scope="request" type="java.util.List<beans.Category>"/>
+
 <body>
 
 <div class="container ">
@@ -10,8 +12,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">1 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/1.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=19" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/19/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -20,8 +22,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">2 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/2.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=5" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/5/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -30,8 +32,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">3 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/3.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=26" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/26/img.jpg  " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -40,8 +42,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">4 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/4.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=35" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/35/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -50,8 +52,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">5 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/5.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=55" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/55/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -60,8 +62,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">6 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/6.png " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=36" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/36/img.jpg" class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -70,8 +72,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">7 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/7.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=37" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/37/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -80,8 +82,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">8 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/8.png " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=45" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/45/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -90,8 +92,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">9 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/9.jpg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=51" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/51/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>
@@ -100,8 +102,8 @@
         <div class="mySlides fade ">
             <div class="numbertext ">10 / 10</div>
             <div>
-                <a href=" ">
-                    <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/10.jpeg " class="d-block w-100 " width="800 " height="300 ">
+                <a href="${pageContext.request.contextPath}/Course/Detail?id=58" role="button">
+                    <img src="${pageContext.request.contextPath}/public/imgs/sourseimgs/58/img.jpg " class="d-block w-100 " width="800 " height="300 ">
                 </a>
             </div>
             <div class="text ">See now!</div>

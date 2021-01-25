@@ -6,6 +6,7 @@
 <jsp:useBean id="courses" scope="request" type="java.util.List<beans.Course>"></jsp:useBean>
 <t:category>
     <jsp:body>
+
         <c:choose>
             <c:when test="${courses.size() == 0}">
                 <div class="card-body">
@@ -102,11 +103,11 @@
                                 <div>
                                     <a class="btn btn-sm btn-outline-primary" href="${pageContext.request.contextPath}/Course/Detail?id=${c.couID}" role="button">
                                         <i class="fa fa-eye" aria-hidden="true"></i>
-                                        Tìm hiểu ngay;
+                                        Tìm hiểu ngay
                                     </a>
                                     <a class="btn btn-sm btn-outline-primary" href="#" role="button">
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        Thêm vào giỏ;
+                                        Thêm vào giỏ
                                     </a>
 
                                 </div>

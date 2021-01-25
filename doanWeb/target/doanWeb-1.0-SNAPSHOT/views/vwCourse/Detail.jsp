@@ -291,13 +291,13 @@
                         <span class="in-page-offset-anchor"></span>
                         <div>
                             <div class="udlite-heading-lg instructor-heading">
-                                <a href="">Mr.Khang Dam Truoc</a>
+                                <a href="">${authUser.name}</a>
                             </div>
                             <div class="instructor-job-title udlite-text-md">Head of Data Science, Pierian Data Inc.</div>
                         </div>
                         <div class="instructor-image">
                             <a href="" class="instructor-image-link">
-                                <img src="imgs/khang.jpg" class="instructor-image-and-stats udlite-avatar-image udlite-avatar" width="64" height="64" alt="">
+                                <img src="${pageContext.request.contextPath}/public/imgs/indeximgs/github-mark.png" class="instructor-image-and-stats udlite-avatar-image udlite-avatar" width="64" height="64" alt="">
                             </a>
                             <ul class="list-unstyled">
                                 <li>
